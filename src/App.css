@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  100% {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes typing {
+  0% {
+    width: 0;
   }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
   to {
-    transform: rotate(360deg);
+    border-color: transparent;
+  }
+}
+
+@keyframes crawl {
+  from {
+    top: 100vh;
+  }
+
+  to {
+    top: 0%;
+  }
+}
+
+.typing-animation {
+  overflow: hidden;
+  border-right: .15em solid #00bfff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 5s steps(44, end), blink-caret .75s step-end infinite;
+}
+
+.App {
+  display: flex;
+  background: linear-gradient(to bottom, black 99%, transparent 100%);
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100vh;
+  perspective: 50rem;
+}
+
+.sections {
+  margin: 3rem;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 40%;
+  animation: twinkle 2s infinite alternate;
+}
+
+.crawl-text {
+  transform: rotateX(25deg);
+  transform-origin: 50% 100%;
+  justify-content: center;
+  perspective: 1000px;
+  align-items: center;
+  position: absolute;
+  color: #FFD700;
+  position: relative;
+  margin-bottom: 5rem;
+  animation: crawl 10s linear forwards;
+  font-size: 2.5rem;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.intro {
+  color: #00bfff;
+}
+
+.outro {
+  animation: fadeIn 10s ease-out forwards;
+}
+
+.name-style {
+  text-align: center;
+  font-size: 6.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: 0 auto;
+  border: 1rem solid #FFD700;
+  border-radius: 2rem;
+  padding: 1rem;
+  animation: fadeIn 10s ease-in-out forwards;
+}
+
+.name-big {
+  letter-spacing: 1.3rem;
+  display: inline-block;
+}
+
+.name-small {
+  letter-spacing: 0.1rem;
+}
+
+.sections {
+  margin-bottom: 2rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .crawl-text {
+    font-size: 2rem;
+  }
+  .App{
+    overflow-x: hidden;
+  }
+
+  .name-style {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .crawl-text {
+    font-size: 1.75rem;
+  }
+
+  .name-style {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .crawl-text {
+    font-size: 1.5rem;
+  }
+
+  .name-style {
+    font-size: 3.5rem;
+    padding: 0.5rem;
+  }
+
+  .name-big {
+    letter-spacing: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .crawl-text {
+    font-size: 1.25rem;
+  }
+
+  .name-style {
+    font-size: 2.5rem;
+    padding: 0.25rem;
+  }
+
+  .name-big {
+    letter-spacing: 0.5rem;
+  }
+
+  .intro,
+  .outro {
+    font-size: 1rem;
+  }
+
+  .sections {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .crawl-text {
+    font-size: 1rem;
+  }
+
+  .name-style {
+    font-size: 2rem;
+    padding: 0.25rem;
+  }
+
+  .name-big {
+    letter-spacing: 0.25rem;
+  }
+
+  .intro,
+  .outro {
+    font-size: 0.75rem;
+  }
+
+  .sections {
+    margin: 0.5rem;
   }
 }

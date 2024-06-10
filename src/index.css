@@ -1,10 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
 body {
   margin: 0;
+  @apply m-0 overflow-x-hidden font-sans antialiased bg-gradient-to-b from-[#fafafa] to-transparent;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom, #fafafa 99%, transparent 100%);
+  font-family: 'Arial', sans-serif;
+  color: #0d151d;
+}
+
+@media (max-width: 1200px) {
+  .body{
+    overflow-x: hidden !important;
+  }
 }
 
 code {

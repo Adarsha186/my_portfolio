@@ -1,0 +1,181 @@
+.header-p {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+}
+
+.header-p h1 {
+    margin: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    border-bottom: 0.5rem solid #0d151d;
+}
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel .control-arrow {
+    background: none;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.project-info {
+    width: 80%;
+    padding: 1rem;
+}
+
+.project-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.project-info p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #0d151d;
+    border: solid #0d151d;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #0d151d;
+    color: #fafafa;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .projects{
+        padding: 2rem;
+    }
+
+    .header-p h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-info h2 {
+        font-size: 1.25rem;
+    }
+
+    .project-info p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-p h1 {
+        font-size: 2rem;
+    }
+
+    .project-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .project-info p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-p h1 {
+        font-size: 1.75rem;
+    }
+
+    .project-info {
+        width: 90%;
+    }
+
+    .project-info h2 {
+        font-size: 1rem;
+    }
+
+    .project-info p {
+        font-size: 0.8rem;
+    }
+
+    .project-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-p h1 {
+        font-size: 1.5rem;
+    }
+
+    .project-info {
+        width: 95%;
+    }
+
+    .project-info h2 {
+        font-size: 0.9rem;
+    }
+
+    .project-info p {
+        font-size: 0.75rem;
+    }
+
+    .project-link {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .project-item {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-p h1 {
+        font-size: 1.25rem;
+    }
+
+    .project-info {
+        width: 100%;
+    }
+
+    .project-info h2 {
+        font-size: 0.8rem;
+    }
+
+    .project-info p {
+        font-size: 0.7rem;
+    }
+
+    .project-link {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .project-item {
+        padding: 0.5rem;
+    }
+}

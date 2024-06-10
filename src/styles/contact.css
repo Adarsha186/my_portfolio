@@ -1,0 +1,164 @@
+.contact {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.header-c {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.header-c h1 {
+    margin: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    border-bottom: 0.5rem solid #0d151d;
+}
+
+.form-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #0d151d;
+    border-radius: 1rem;
+    width: 50%;
+}
+
+.form-group {
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #f0f0f0;
+    color: #0d151d;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 6rem;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #fafafa;
+    border: solid #fafafa;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 1rem;
+}
+
+.contact-link:hover {
+    background-color: #fafafa;
+    color: #0d151d;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .contact{
+        padding: 2rem;
+    }
+    .header-c h1 {
+        font-size: 2.5rem;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-c h1 {
+        font-size: 2rem;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-c h1 {
+        font-size: 1.75rem;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-c h1 {
+        font-size: 1.5rem;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem;
+    }
+
+    .form-p {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-c h1 {
+        font-size: 1.25rem;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem;
+    }
+
+    .form-p {
+        padding: 1rem;
+    }
+}

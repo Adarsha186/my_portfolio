@@ -1,0 +1,99 @@
+.about{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.about-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-h1{
+    font-size: 3rem;
+    font-weight: bold;
+    width: 99%;
+    display: inline-block;
+    border-bottom: 0.5rem solid black;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+}
+
+.about-p{
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.profile-image img{
+    padding: 2rem;
+}
+
+.about-button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: solid black;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        display: none;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .about-text{
+        padding: 2rem;
+    }
+
+    .about-h1 {
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .about-p {
+        font-size: 1.2rem;
+        /* Adjust font size for smaller screens */
+        text-align: center;
+        /* Center text for better readability */
+    }
+
+    .about-button {
+        font-size: 0.9rem;
+        margin: 2rem;
+        /* Adjust button size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .about-h1 {
+        font-size: 2rem;
+    }
+
+    .about-p {
+        font-size: 1rem;
+    }
+
+    .about-button {
+        font-size: 0.8rem;
+    }
+}

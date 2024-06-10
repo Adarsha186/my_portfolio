@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Ensure specificity to override Bootstrap defaults */
+#navbar {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#navbar .nav-link {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    animation: fadeIn 5s ease-out forwards;
+    transition: all 0.3s ease;
+}
+
+#navbar .nav-link:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    text-shadow: 0 0.1rem 0.1rem #FFD700;
+    cursor: pointer;
+}
+
+.navbar-scroll {
+    background-color: #eeeeee !important;
+    box-shadow: 0 0.2rem 0.2rem #dddddd;
+}
+
+.navbar-scroll .nav-link {
+    color: black !important;
+}
+
+.navbar-scroll .nav-link:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    text-shadow: 0 0.1rem 0.1rem black;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #navbar .nav-link {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #navbar .nav-link {
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+}
