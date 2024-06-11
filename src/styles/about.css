@@ -53,7 +53,8 @@
 
 @media (max-width: 768px) {
     .profile-image {
-        display: none;
+        display: block;
+        width: 100%;
     }
 
     .about {

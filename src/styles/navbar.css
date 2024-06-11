@@ -23,12 +23,17 @@
     z-index: 10;
 }
 
+.navbar-toggler {
+    border-color: #cccccc;
+    /* Change the border color */
+}
+
 #navbar .nav-link {
     color: #FFD700;
     font-weight: bold;
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    animation: fadeIn 5s ease-out forwards;
+    animation: fadeIn 2s ease-out forwards;
     transition: all 0.3s ease;
 }
 

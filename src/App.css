@@ -81,7 +81,7 @@
   color: #FFD700;
   position: relative;
   margin-bottom: 5rem;
-  animation: crawl 10s linear forwards;
+  animation: crawl 5s linear forwards;
   font-size: 2.5rem;
   text-align: center;
   overflow: hidden;
@@ -93,7 +93,7 @@
 }
 
 .outro {
-  animation: fadeIn 10s ease-out forwards;
+  animation: fadeIn 5s ease-out forwards;
 }
 
 .name-style {
@@ -105,7 +105,7 @@
   border: 1rem solid #FFD700;
   border-radius: 2rem;
   padding: 1rem;
-  animation: fadeIn 10s ease-in-out forwards;
+  animation: fadeIn 5s ease-in-out forwards;
 }
 
 .name-big {
@@ -121,89 +121,20 @@
   margin-bottom: 2rem;
 }
 
-/* Media Queries for Responsive Design */
 @media (max-width: 1200px) {
+  .App{
+    height: 50vh;
+  }
   .crawl-text {
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 2rem;
   }
   .App{
     overflow-x: hidden;
   }
 
   .name-style {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 
-@media (max-width: 992px) {
-  .crawl-text {
-    font-size: 1.75rem;
-  }
-
-  .name-style {
-    font-size: 4.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .crawl-text {
-    font-size: 1.5rem;
-  }
-
-  .name-style {
-    font-size: 3.5rem;
-    padding: 0.5rem;
-  }
-
-  .name-big {
-    letter-spacing: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .crawl-text {
-    font-size: 1.25rem;
-  }
-
-  .name-style {
-    font-size: 2.5rem;
-    padding: 0.25rem;
-  }
-
-  .name-big {
-    letter-spacing: 0.5rem;
-  }
-
-  .intro,
-  .outro {
-    font-size: 1rem;
-  }
-
-  .sections {
-    margin: 1rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .crawl-text {
-    font-size: 1rem;
-  }
-
-  .name-style {
-    font-size: 2rem;
-    padding: 0.25rem;
-  }
-
-  .name-big {
-    letter-spacing: 0.25rem;
-  }
-
-  .intro,
-  .outro {
-    font-size: 0.75rem;
-  }
-
-  .sections {
-    margin: 0.5rem;
-  }
-}

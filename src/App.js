@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Icon } from './components/Icon';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -59,7 +60,8 @@ function App() {
       <div className='sections'><Projects /></div>
       <div className='sections'><Contact /></div>
       <div className='sections'><Icon /></div>
-      <div className='sections'><Footer/></div>
+      <div className='sections'><Footer /></div>
+      <ScrollToTopButton/>
     </div>
   );
 }
