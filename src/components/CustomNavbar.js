@@ -27,8 +27,10 @@ const CustomNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="about" smooth={true} duration={500} spy={true}>About</Nav.Link>
-            <Nav.Link as={Link} to="projects" smooth={true} duration={500} spy={true}>Projects</Nav.Link>
+            <Nav.Link as={Link} to="experience" smooth={true} duration={500} spy={true}>Experience</Nav.Link>
             <Nav.Link as={Link} to="skills" smooth={true} duration={500} spy={true}>Skills</Nav.Link>
+            <Nav.Link as={Link} to="education" smooth={true} duration={500} spy={true}>Education</Nav.Link>
+            <Nav.Link as={Link} to="projects" smooth={true} duration={500} spy={true}>Projects</Nav.Link>
             <Nav.Link as={Link} to="contact" smooth={true} duration={500} spy={true}>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
