@@ -1,0 +1,73 @@
+/* src/styles/experience.css */
+.experience {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.experience-h1 {
+    margin: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    border-bottom: 0.5rem solid #0d151d;
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80%;
+    padding-left: 7rem;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.experience-dates {
+    flex: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-right: 2rem;
+    text-align: right;
+}
+
+.experience-details {
+    flex: 2;
+}
+
+.experience-details h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.experience-details h3 {
+    font-size: 1rem;
+    font-style: italic;
+    color: gray;
+    margin: 0.5rem 0 0;
+}
+
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-dates {
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .experience-details {
+        flex: unset;
+    }
+}

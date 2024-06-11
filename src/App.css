@@ -123,7 +123,7 @@
 
 @media (max-width: 1200px) {
   .App{
-    height: 85vh;
+    height: 75vh;
   }
   .crawl-text {
     font-size: 3rem;

@@ -8,6 +8,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Icon } from './components/Icon';
 import ScrollToTopButton from './components/ScrollToTopButton';
+import Experience from './components/Experience';
+import Education from './components/Education';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -56,7 +58,9 @@ function App() {
         </div>
       </div>
       <div className='sections'><About /></div>
+      <div className='sections'><Experience/></div>
       <div className='sections'><Skills /></div>
+      <div className='sections'><Education /></div>
       <div className='sections'><Projects /></div>
       <div className='sections'><Contact /></div>
       <div className='sections'><Icon /></div>
