@@ -73,19 +73,20 @@
 /* Media Queries for Responsive Design */
 @media (max-width: 1200px) {
     .projects{
+        height: 60vh;
         padding: 5rem;
     }
 
     .header-p h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .project-info h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .project-info p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
