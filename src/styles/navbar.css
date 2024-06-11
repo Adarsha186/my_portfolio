@@ -35,13 +35,12 @@
 #navbar .nav-link:hover {
     text-decoration: none;
     transform: scale(1.1);
-    text-shadow: 0 0.1rem 0.1rem #FFD700;
     cursor: pointer;
 }
 
 .navbar-scroll {
     background-color: #eeeeee !important;
-    box-shadow: 0 0.2rem 0.2rem #dddddd;
+    box-shadow: 0 0.1rem 0.1rem #dddddd;
 }
 
 .navbar-scroll .nav-link {
@@ -51,7 +50,6 @@
 .navbar-scroll .nav-link:hover {
     text-decoration: none;
     transform: scale(1.1);
-    text-shadow: 0 0.1rem 0.1rem black;
     cursor: pointer;
 }
 
