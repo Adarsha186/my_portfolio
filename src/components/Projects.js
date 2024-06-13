@@ -8,6 +8,7 @@ import p3 from '../images/p3.png';
 import p4 from '../images/p4.jpg';
 import p5 from '../images/p5.jpg';
 import p6 from '../images/p6.png';
+import p7 from '../images/p7.png';
 import { Element } from 'react-scroll';
 
 const projects = [
@@ -52,6 +53,13 @@ const projects = [
         techStack: "Python, Flask, JavaScript, JSON, scikit-learn, Android Studio",
         img: p5,
         link: "https://github.com/Adarsha186/Capstone-Web-App"
+    },
+    {
+        title: "Google Docs Clone",
+        description: "Text editor app with real time collaboration. Handled multiple document instances by Socket.io and creating socket rooms for the document instance.",
+        techStack: "React, Node, Quill, Socket.io, MongoDB",
+        img: p7,
+        link: "https://github.com/Adarsha186/docs-clone/"
     }
 ];
 
