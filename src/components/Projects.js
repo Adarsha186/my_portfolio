@@ -9,6 +9,7 @@ import p4 from '../images/p4.jpg';
 import p5 from '../images/p5.jpg';
 import p6 from '../images/p6.png';
 import p7 from '../images/p7.png';
+import p8 from '../images/p8.png';
 import { Element } from 'react-scroll';
 
 const projects = [
@@ -60,6 +61,13 @@ const projects = [
         techStack: "React, Node, Quill, Socket.io, MongoDB",
         img: p7,
         link: "https://github.com/Adarsha186/docs-clone/"
+    },
+    {
+        title: "To-do Application using AWS",
+        description: "Developed a To-Do list application using React for the front end, the backend is built with Django, hosted on an EC2 instance. The application uses AWS S3 for hosting the website and CloudFront for efficient content delivery and management.",
+        techStack: "React, Python, Django, AWS EC2, AWS S3, AWS CloudFront",
+        img: p8,
+        link: "https://github.com/Adarsha186/todo_app/"
     }
 ];
 
