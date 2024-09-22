@@ -1,9 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import '../styles/navbar.css';
 
 const CustomNavbar = () => {
+  const [count, setCount] = useState('Loading...');
+
+  useEffect(() => {
+    const fetchVisitorCount = async () => {
+      try {
+        const response = await fetch('https://my-gateway-9zy6x2b6.uc.gateway.dev');
+        const data = await response.json();
+        setCount(data);
+        console.log(data);
+      } catch (error) {
+        console.error('Error fetching visitor count:', error);
+        setCount('Error fetching count');
+      }
+    };
+
+    fetchVisitorCount();
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.getElementById('navbar');
@@ -23,6 +41,7 @@ const CustomNavbar = () => {
   return (
     <Navbar id="navbar" collapseOnSelect expand="lg" fixed="top">
       <Container>
+      <Navbar.Brand className="visitor-count-link">Visitor Count: {count}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -37,6 +56,6 @@ const CustomNavbar = () => {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default CustomNavbar;
