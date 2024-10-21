@@ -19,8 +19,15 @@ const Experience = () => {
                     <div className='experience-item'>
                         <div className='experience-dates'>Jan 2022 – Jun 2022</div>
                         <div className='experience-details'>
-                            <h2>Software Engineer Intern</h2>
+                            <h2>Full Stack Developer Intern</h2>
                             <h3>Shiash Info Solutions, Chennai, India</h3>
+                        </div>
+                    </div>
+                    <div className='experience-item'>
+                        <div className='experience-dates'>Jan 2022 – Jun 2022</div>
+                        <div className='experience-details'>
+                            <h2>Student Assistant</h2>
+                            <h3>Vellore Institute of Technology, Amaravati</h3>
                         </div>
                     </div>
                 </div>
